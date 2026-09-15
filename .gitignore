@@ -1,0 +1,31 @@
+# 가상환경
+.venv/
+venv/
+
+# 대용량 데이터
+02_data/
+
+# 모델 가중치
+05_models/
+*.pt
+*.pth
+
+# 압축 파일
+*.zip
+*.7z
+*.rar
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter 임시파일
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS 파일
+.DS_Store
+Thumbs.db
