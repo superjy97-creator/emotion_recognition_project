@@ -5,10 +5,15 @@ venv/
 # 대용량 데이터
 02_data/
 
-# 모델 가중치
-05_models/
-*.pt
-*.pth
+# 모델 가중치 - 최종 실험 모델만 추적
+05_models/*
+
+# 흑백 2차 최종 모델
+!05_models/*pretrained_v2_dual_best*.pt
+
+# 컬러 JPG/SSD/GPU 강제사용 최종 모델
+# 현재 학습 완료 후 최종 결과만 올릴 예정
+!05_models/*pretrained_GPU강제사용_수업수준안정화버전9_B128*.pt
 
 # 압축 파일
 *.zip
@@ -30,10 +35,27 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+
 # 03_notebooks - 최종 제출용 노트북만 추적
 03_notebooks/*.ipynb
 
 !03_notebooks/01_sample_data_check.ipynb
 !03_notebooks/02_full_data_eda.ipynb
 !03_notebooks/03_preprocessing.ipynb
+
+# 흑백 2차 최종 학습 노트북
 !03_notebooks/04_pytorch_model_training_pretrained_v2_dual_best(집에서 한 것).ipynb
+
+# 컬러 최종 학습 노트북
+# 학습 완료 후 실제 최종 파일명을 여기에 추가 예정
+
+
+# 06_outputs - 최종 실험 결과만 추적
+06_outputs/*
+
+# 흑백 2차 최종 결과
+!06_outputs/*pretrained_v2_dual_best*
+
+# 컬러 JPG/SSD/GPU 강제사용 최종 결과
+# 현재 학습 완료 후 결과물 전체를 올릴 예정
+!06_outputs/*pretrained_GPU강제사용_수업수준안정화버전9_B128*
