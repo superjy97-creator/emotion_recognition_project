@@ -29,3 +29,11 @@ __pycache__/
 # OS 파일
 .DS_Store
 Thumbs.db
+
+# 03_notebooks - 최종 제출용 노트북만 추적
+03_notebooks/*.ipynb
+
+!03_notebooks/01_sample_data_check.ipynb
+!03_notebooks/02_full_data_eda.ipynb
+!03_notebooks/03_preprocessing.ipynb
+!03_notebooks/04_pytorch_model_training_pretrained_v2_dual_best(집에서 한 것).ipynb
