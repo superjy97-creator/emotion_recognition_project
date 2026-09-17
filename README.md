@@ -44,12 +44,15 @@ Jetson Orin Nano에서 실행할 수 있도록 구성하였습니다.
 본 프로젝트에서는 다음 3개의 CNN 모델을 비교합니다.
 
 ### MobileNetV3-Small
+
 경량 구조를 기반으로 실시간 추론 및 엣지 디바이스 환경에 적합한 모델입니다.
 
 ### EfficientNet-B0
+
 비교적 높은 분류 성능과 효율성을 동시에 고려한 모델입니다.
 
 ### ResNet18
+
 Residual Learning 구조를 사용하며 안정적인 이미지 분류 성능을 목표로 사용하였습니다.
 
 학습 결과는 Best Accuracy 모델과 Best Loss 모델을 각각 저장하여 비교합니다.
@@ -85,7 +88,7 @@ emotion_recognition_project/
 │  ├─ 발표 대본
 │  └─ 발표 PPT
 │
-├─ 02_data/
+├─ 02_data/                    # 로컬 데이터 폴더 (GitHub 미포함)
 │  ├─ downloads/
 │  ├─ labels/
 │  ├─ processed/
@@ -94,9 +97,6 @@ emotion_recognition_project/
 │
 ├─ 03_notebooks/
 │  └─ 데이터 확인, EDA, 전처리, 모델 학습 Notebook
-│
-├─ 04_src/
-│  └─ 재사용 가능한 Python 소스 코드용 폴더
 │
 ├─ 05_models/
 │  └─ 학습 완료 모델 (.pt)
@@ -109,7 +109,8 @@ emotion_recognition_project/
 │  └─ Training History CSV
 │
 ├─ 07_app/
-│  └─ Jetson Orin Nano 실시간 감정 인식 애플리케이션
+│  └─ jet_emotion_v012.py
+│     └─ Jetson Orin Nano 실시간 감정 인식 실행 코드
 │
 ├─ 08_demo_video/
 │  └─ 시연 영상
@@ -118,4 +119,5 @@ emotion_recognition_project/
 │  └─ 프로젝트 참고 자료
 │
 ├─ .gitignore
-└─ requirements.txt
+├─ requirements.txt
+└─ README.md
